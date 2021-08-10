@@ -32,9 +32,7 @@
         <configuration>
           <wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>
           <packageName>au.pathak.id.soap.ws.client</packageName>
-          <sourceDestDir>
-            ${project.build.directory}/generated-sources/
-          </sourceDestDir>
+          <sourceDestDir>${project.build.directory}/generated-sources/</sourceDestDir>
         </configuration>
       </plugin>
     </plugins>
