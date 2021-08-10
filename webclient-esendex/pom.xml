@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>au.pathak.id.ws.soap.clients</groupId>
+  <artifactId>webclients-esendex</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <distributionManagement>
+    <repository>
+      <id>jfrog-central</id>
+      <name>maven-virtual-releases</name>
+      <url>https://pathak.jfrog.io/artifactory/default-maven-virtual</url>
+    </repository>
+    <snapshotRepository>
+      <id>jfrog-snapshots</id>
+      <name>maven-virtual-snapshots</name>
+      <url>https://pathak.jfrog.io/artifactory/default-maven-virtual</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>jaxws-maven-plugin</artifactId>
+        <version>2.6</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>wsimport</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <wsdlDirectory>${project.basedir}/src/main/resources/</wsdlDirectory>
+          <packageName>au.pathak.id.soap.ws.client</packageName>
+          <sourceDestDir>${project.build.directory}/generated-sources/</sourceDestDir>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>
