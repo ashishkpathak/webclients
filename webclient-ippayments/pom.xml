@@ -4,6 +4,10 @@
   <groupId>au.pathak.id.ws.soap.clients</groupId>
   <artifactId>webclients-ippayments</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
   <distributionManagement>
     <repository>
       <id>jfrog-central</id>
