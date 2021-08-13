@@ -4,7 +4,7 @@ WebClients is a collection of JAXWS client library for various soap interfaces.
 
 ## Installation
 
-Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
+Use the maven to build/deploy.
 
 ```bash
 webclients\webclients-ippayments> mvn clean install
